@@ -1,0 +1,350 @@
+header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0 0 10px gainsboro;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+nav{
+  display: none;
+}
+
+main{
+  text-align: center;
+}
+
+#title{
+  padding: 150px 20px 0px;
+  background: #ececec;
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(common-bg.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+button{
+  background: black;
+  color: white;
+  border: none;
+  margin-top: 50px;
+  padding: 15px 70px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  margin: 30px 0;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+#title p{
+  margin: 0 0 50px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#title button{
+  margin-bottom: 100px;
+}
+
+.about{
+  margin: 100px 20px 0px;
+}
+
+#aboutContainer{
+  margin-bottom: 30px;
+}
+
+.about p{
+  line-height: 25px;
+  font-size: 15px;
+}
+
+h3{
+  font-size: 27px;
+  margin-bottom: 50px;
+}
+
+#skillSide{
+  text-align: left;
+  margin: 100px 0;
+}
+
+#skills{
+  margin-top: 100px;
+}
+
+h4{
+  margin-bottom: 40px;
+}
+
+#skillList{
+  list-style: none;
+  padding: 0;
+}
+
+#skillList li{
+  display: inline-block;
+  background: rgb(224, 224, 224);
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 13px;
+}
+
+.contactContainer{
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(common-bg.svg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.contactSection{
+  margin: 0 20px;
+}
+
+.contactSection p{
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+form{
+  margin-top: 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gainsboro;
+  padding: 10px 20px;
+  text-align: left;
+  background: white;
+}
+
+label{
+  display: block;
+  margin: 30px 0 20px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  resize: vertical;
+  background: #f0f0f0;
+  color: #0e0e16;
+  cursor: pointer;
+}
+
+button[type="submit"]{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+footer{
+  padding:30px 20px;
+  background: #000000;
+  color: white;
+}
+
+#iconContainer{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+
+footer h3{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+footer p{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer{
+  border-bottom: 1px solid rgba(220, 220, 220, 0.39);
+  padding-bottom: 40px;
+}
+
+article{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 9px;
+  text-align: center;
+}
+
+span{
+  color: maroon;
+}
+
+@media screen and (min-width: 600px) {
+
+  header{
+    padding: 40px 50px;
+  }
+
+  #hamburger{
+    display: none;
+  }
+
+  nav{
+    display: block;
+  }
+
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  nav ul li{
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer #footerPara{
+    order: 1;
+  }
+
+  .footer #socialContainer{
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  
+  #skillSide{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  button[type="submit"]{
+    width: 200px;
+  }
+
+  #submitContainer{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+
+  #skills{
+    margin: 0px;
+    padding: 0;
+  }
+
+  .about{
+    margin: 100px 100px;
+  }
+
+  .contactSection{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactSection div{
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
+  .about{
+    margin: 100px 200px;
+  }
+
+  .footer{
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+  #footerPara{
+    width: 400px;
+  }
+
+  #footerPara p{
+    font-size: 15px;
+  }
+
+  .footer{
+    padding-bottom: 60px;
+  }
+
+  .icon{
+    color: red;
+    font-size: 25px;
+  }
+
+  .footer h3{
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  header{
+    padding: 40px 100px;
+  }
+
+  #title{
+    padding: 280px 30px;
+  }
+
+  #title h1{
+    font-variant: small-caps;
+    font-size: 60px;
+  }
+
+  #title h2{
+    color: red;
+    font-size: 40px;
+  }
+
+  .contactSection p{
+    position: relative;
+  }
+
+  #formContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form{
+    width: 800px;
+  }
+
+  button{
+    padding: 20px 80px;;
+  }
+  
+}

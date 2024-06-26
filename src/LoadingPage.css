@@ -1,0 +1,17 @@
+body{
+    background-color: teal;
+}
+
+.container{
+    background-color: slategray;
+    width: 300px;
+    display: grid;
+    grid-column: 3;
+    column-gap: 1;
+}
+
+.box{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+}
