@@ -3,9 +3,17 @@
   src: url('./fonts/Montserrat-Regular.ttf');
 }
 
-/* body{
-  background: #1a191d;
-} */
+@font-face {
+  font-family: 'Sans';
+  src: url('./fonts/SourceSansPro-Black.otf');
+}
+
+#projectContainer h4,
+nav ul li a
+{
+  font-family: 'Sans';
+  color: black;
+}
 
 *{
   padding: 0;
